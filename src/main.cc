@@ -10,10 +10,6 @@ using std::ostream;
 using std::unique_ptr;
 using std::string;
 
-
-// Try to read the pattern from input, skipping leading
-// whitespaces. The state of the input stream is restored if it is not
-// a match.
 int repl(istream& in, ostream& out) {
   car::Reader reader;
   while (!in.eof() && in.good()) {
